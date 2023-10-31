@@ -48,7 +48,7 @@ public class PracticeFormTests {
         $("#city").click();
         $("#stateCity-wrapper").$(byText("Delhi")).click();
         $("#submit").click();
-        $("#example-modal-sizes-title-lg").shouldBe(visible, Duration.ofSeconds(10)).shouldHave(text("Thanks for submitting the form"));
+        $("#example-modal-sizes-title-lg").shouldBe(visible, Duration.ofSeconds(6)).shouldHave(text("Thanks for submitting the form"));
         $$(".table thead").get(0).shouldHave(text("Label Values"));
         $$(".table tbody tr").get(0).shouldHave(text("Student Name Ilgiz Gafarov"));
         $$(".table tbody tr").get(1).shouldHave(text("Student Email igafarov90@mail.ru"));
