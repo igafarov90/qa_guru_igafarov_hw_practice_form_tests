@@ -7,7 +7,8 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class Table {
-    SelenideElement table = $("table");
+    private final SelenideElement table = $("table");
+
     public void checkTable(String key, String value) {
         table.$(byText(key))
                 .parent()
